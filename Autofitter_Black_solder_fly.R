@@ -5,8 +5,6 @@ rm(list = ls())
 library("ggplot2")
 library("readxl")
 library("scales")
-library("minpack.lm")
-library("cowplot")
 library("Rmisc")
 
 data <- read.csv("000_Data_for_R.csv")
