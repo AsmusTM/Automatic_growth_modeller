@@ -5,8 +5,6 @@ rm(list = ls())
 library("ggplot2")
 library("readxl")
 library("scales")
-library("minpack.lm")
-library("cowplot")
 library("Rmisc")
 
 
@@ -27,7 +25,6 @@ q <- Respiration.C*1000/Weight.C # mg C/(day * mg lv)
 
 D <- cbind(data, Weight.C, Respiration.C, q)
 D$Culture <- as.factor(D$Culture)
-m.Weight <- summarySE(data = D, measurevar = "Dry.weight", groupvars = c("Day", "Density", "Medium"))
 
 
 #=========================================================
